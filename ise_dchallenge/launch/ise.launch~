@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<launch>
+<rosparam command="load" file="$(find ise_dchallenge)/Config/ise_parameters.yaml"/>
+   <node pkg="ise_dchallenge" type="error_update" name="error_update" launch-prefix="terminal -e"/>
+   <!--include file="$(find bebop_driver)/launch/bebop_node.launch"/-->
+   			<!--include file="$(find bebop_tools)/launch/xbox_teleop.launch"/-->   
+<!--rosparam command="load" file="$(find local_nav)/src/parameters.yaml"/>
+   <node pkg="local_nav" type="mcs_newlocalNav" name="mcs_newlocalNav1" launch-prefix="xterm -e">
+   </node-->
+<!--<node pkg="rosbag"  type="rosbag" name="recorder" args="record -o subset /altimeter /cmd_vel /gazebo/model_states /initialpose /local_nav/quadrotor_odometry" >-->
+<!--</node>-->
+<!--	<node name="rqt_graph1" pkg="rqt_graph" type="rqt_graph" launch-prefix="xterm -e"/>-->
+<!--node name="rqt_plot1" pkg="rqt_plot" type="rqt_plot" args="/altimeter/altitude /sonar_height/range" launch-prefix="xterm -e">
+</node-->
+<!--node name="rviz1" pkg="rviz" type="rviz" launch-prefix="xterm -e">
+</node-->
+<!--node pkg="local_nav" type="rviz_markers" name="rviz_markers1" launch-prefix="xterm -e">
+   </node-->
+<!--<node name="topic_recorder" pkg="local_nav" type="record_topics" launch-prefix="xterm -e">-->
+<!--</node>-->
+
+</launch>

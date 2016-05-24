@@ -1,0 +1,38 @@
+#Max speed values
+speed_min:              -0.2
+speed_max:              0.2
+speed_z_min:            -0.5
+speed_z_max:            1.0
+
+#Pid parameters
+k_lin_x:                1.0
+k_lin_y:                1.0
+k_lin_z:                1.0
+
+k_int_x:                0.8
+k_int_y:                0.8
+k_int_z:                0.0
+
+k_diff_x:               0.5
+k_diff_y:               0.5
+k_diff_z:               0.0
+
+#Percentage for speed control
+perc_x:           0.1
+perc_y:           0.1
+perc_z:           0.1
+
+#----------------                
+# navigation, only rotation and z flight available
+z_ref:                  1.5
+
+max_ang_vel:            45.0             #degrees/s
+
+#referencia inicial de odometria
+position_x0:            0                #m
+position_y0:            0                #m
+position_z0:            0                #m
+orientation_x0:         0                #rads
+orientation_y0:         0                #rads
+theta_0:                0                #rads
+abs_theta_0:            0                #rads
